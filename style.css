@@ -26,6 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-items: center;
     border-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.479);
     padding: 10px;
@@ -284,18 +285,27 @@ body {
     .text{
         width: 500px;
     }
+    
+    .iframe{
+        width: 300px;
+    }
 }
 
-@media screen and (max-width: 830px){
-    html{
-        font-size: 55%;
-      }
-
+@media screen and (max-width: 540px){
     .text{
         width: 400px;
     }
+}
 
-    .iframe{
-        width: 300px;
+@media screen and (max-width: 425px){
+    .header h1 a{
+        font-size: 3rem;
+    }
+
+    .menu-toggle{
+        width: 30px;
+    }
+    .text{
+        width: 320px;
     }
 }
