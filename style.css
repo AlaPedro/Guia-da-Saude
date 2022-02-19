@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+  }
+  
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    background: linear-gradient(360deg, rgb(24, 59, 73), rgb(5, 255, 234));
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+    padding: 10px;
+    width: 90%;
+    max-height: 91px;
+}
+
+.header h1 a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: 4rem;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    height: 50px;
+}
+
+.btn-nav{
+   text-align: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(92, 143, 255);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-nav:hover{
+    background-color: rgb(73, 123, 231);
+}
+    
+.menu-nav a:hover{
+    color:rgb(3, 129, 119) ;
+    text-align: center;
+} 
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(17, 73, 87, 0.301);
+    width: 350px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.input{
+    width: 180px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.level select{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-cal{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-cal:hover{
+    background-color: rgba(152, 255, 49, 0.432);
+    color: #fff;
+}
+.text{
+    text-align: justify;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px;
+    gap: 10px;
+    color: #242424;
+    background-color: rgba(172, 243, 237, 0.253);
+}
+
+.text h2{
+    font-size: 2.5rem;
+}
+
+.text h3{
+    font-size: 1.8rem;
+}
+
+.text p {
+    font-size: 1.5rem;
+}
+
+.text-title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.iframe{
+    width: 50rem;
+    border-radius: 5px;
+}
+
+.resultado-box{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+
+    background-color: rgba(137, 225, 247, 0.507);
+    width: 350px;
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+}
+
+.btn-results{
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.btn-cal-result{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-cal-result:hover{
+    background-color: rgba(229, 233, 17, 0.637);
+    color: #fff;
+}
+
+/*Media querie*/
+
+@media screen and (max-width: 1175px){
+    .menu-nav{
+        display: none;
+    }
+
+    .header{
+        justify-content: space-around;
+        width: 100%;
+    }
+    .one, .two, .three {
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    
+        transition-duration: 0.3s;
+      }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 40px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top:0;
+        left:0;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        background-color:#17f2fa ;
+    
+        z-index: 10;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.menu-section.on nav{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .menu-nav a:hover{
+    background-color:rgb(3, 129, 119) ;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-section.on .menu-toggle{
+    position:absolute;
+    right: 40px;
+    top: 23px;
+  }
+
+  .menu-section.on .menu-toggle .one{
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two{
+    opacity: 0;
+  }
+  
+  .menu-section.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+  transition-duration: 0.5s;
+  font-size: 3rem;
+  line-height: 4rem;
+  display: block;
+  }
+}

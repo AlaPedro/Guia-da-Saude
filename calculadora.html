@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guia da Saúde - Calculadora Basal</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1><a href="index.html">Guia da Saúde</a></h1>
+
+             <div class="menu-section ">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                  </div>
+
+                 <nav class="menu-nav">
+                     <a href="/calculadora.html">Calculadora</a>
+                     <a href="#">Monitore seu peso</a>
+                     <a href="#">Entrar</a>
+                     <button class="btn-nav">Cadastre-se</button>
+                 </nav>
+             </div>
+           
+    </header>
+
+    <section class="calculadora">
+        
+        <div class="sex">
+            <h2>Sexo</h2>
+            <input class="inp-radio" type="radio" checked value="H" id="sexo1" name="sexo">
+            Homem
+            <input class="inp-radio" type="radio"  value="M" id="sexo2" name="sexo">
+            Mulher
+        </div>
+    
+        <div class="weight">
+            <h2>Seu peso</h2>
+            <input id="peso" type="number" class="input">
+        </div>
+    
+        <div class="height">
+            <h2>Sua altura</h2>
+            <input id="altura" type="number" class="input">
+        </div>
+    
+        <div class="age">
+            <h2>Sua idade</h2>
+            <input id="idade" type="number" class="input">
+        </div>
+    
+        <div class="level">
+            <h2>Informe seu nível de atividade física</h2>
+            <select name="atividade" id="atividade">
+    
+            <option value="1.2" selected>Sedentário</option>
+            <option value="1.375" >Atividade leve</option>
+            <option value="1.55" >Atividade mediana</option>
+            <option value="1.725" >Atividade intensa</option>
+            <option value="1.9" >Atividade muito
+            intensa</option>
+            </select>
+    
+        </div>
+    
+        <button onclick="calcularDados()" class="btn-cal"> Calcular</button>
+        
+    </section>
+
+    <section id="resultado-box" class="resultado-box">
+
+        <p class="" id="resultado"></p>
+    
+        <div class="results" id="btns-results">
+    
+            <h2 class="informeObjetivo"> Objetivo: </h2>
+            
+            <div class="btn-results">
+                <button onclick="perderPeso()" class="btn-cal-result"> Perder peso</button>
+                <button onclick="ganharPeso()" class="btn-cal-result"> Ganhar peso</button>
+            </div>
+    
+        </div>
+    
+        <div class="novoObjetivo" id="novoObjetivo">
+            <p id="novoResultado"></p>
+        </div>
+    
+    </section>
+    <script src="showMenu.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>
