@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Guia da Saúde - Calculadora Basal</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1><a href="/html/index.html">Guia da Saúde</a></h1>
+
+             <div class="menu-section ">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                  </div>
+
+                 <nav class="menu-nav">
+                     <a href="/html/calculadora.html">Calculadora</a>
+                     <a href="/html/monitoramentopeso.html">Monitore seu peso</a>
+                     <a href="#">Entrar</a>
+                     <button class="btn-nav">Cadastre-se</button>
+                 </nav>
+             </div>
+           
+    </header>
+
+    <section class="monitor-peso-text">
+        <h2>Monitore seu peso!</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis saepe aut libero unde vero quasi aperiam dolorem harum officiis et suscipit perspiciatis nihil, eius eos similique nisi! Ipsum, nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quis suscipit tempore provident cumque aliquid ad perspiciatis! Ullam quidem modi, iusto soluta ad delectus iste exercitationem eum fugiat quam minus.</p>
+        <h3>Informe seu peso atual:</h3>
+        <input class="input" type="number">
+        <button class="add-peso-chart-btn">Adicionar Peso</button>
+    </section>
+    
+    <section class="canvas-space">
+        <canvas id="pesoChart" width="400" height="400"></canvas>
+    </section>
+    
+    
+
+
+
+    <script src="/js/chart.js"></script>
+    <script src="/node_modules/chart.js/dist/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/showMenu.js"></script>
+</body>
+</html>
