@@ -22,6 +22,8 @@ function calcularDados (){
 
           document.getElementById('resultado-box').style.display = 'flex';
 
+          document.getElementById('btn-cal-remove').style.display = 'block';
+
           resultado.innerHTML = `Sua taxa metabolica basal é: <b> ${taxaMetabolicaBasal} Calorias </b>`
       }
 
@@ -120,3 +122,12 @@ function ganharPeso (){
         novoResultado.innerHTML = `Seu objetivo diário é de: <b> ${taxaMetabolicaBasal} Calorias </b>`
     }
 };
+
+
+    
+        // Remover dados btn
+
+        function removeData () {
+            console.log('Remove data')
+            document.location.reload(true);
+        }

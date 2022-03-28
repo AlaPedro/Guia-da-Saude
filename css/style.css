@@ -92,7 +92,14 @@ body {
     font-size: 1.5rem;
     margin: auto;
 }
-
+.weight p {
+    font-size: 10px;
+    color: #cccccc;
+}
+.height p {
+    font-size: 10px;
+    color: #cccccc;
+}
 .input{
     width: 180px;
     height: 40px;
@@ -114,6 +121,19 @@ body {
     border-radius: 5px;
     border: none;
 }
+
+.btn-cal-remove{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    display: none;
+}
+.btn-cal-remove:hover{
+    background-color: rgba(207, 76, 0, 0.719);
+    color: #fff;
+}
+    
 .btn-cal:hover{
     background-color: rgba(152, 255, 49, 0.432);
     color: #fff;
@@ -231,13 +251,16 @@ body {
 /*Canvas style*/
 
 .canvas-space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
     width: 800px;
     height: 500px;
-    background-color: rgba(58, 58, 58, 0.308);
+    background-color: rgba(5, 255, 234, 0.404);
 }
 
 /*Media querie*/
